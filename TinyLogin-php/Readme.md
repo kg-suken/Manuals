@@ -29,7 +29,6 @@ OS:Ubuntu24.04
 ```
 sudo apt update
 sudo apt install ca-certificates curl gnupg
-
 ```
 Dockerのリポジトリを追加
 ```
@@ -43,12 +42,10 @@ echo \
     $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
     sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt update
-
 ```
 Dockerのインストール
 ```
 sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
-
 ```
 ### 2.Portainerのインストール
 ボリューム作成
@@ -101,7 +98,6 @@ CREATE TABLE users (
     username VARCHAR(50) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL
 );
-
 ```
 
 ### Webコンテナ
