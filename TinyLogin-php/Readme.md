@@ -27,27 +27,27 @@ OS:Ubuntu24.04
 ### 1.Dockerのインストール
 必要なパッケージをインストール
 ```
-    sudo apt update
-    sudo apt install ca-certificates curl gnupg
+sudo apt update
+sudo apt install ca-certificates curl gnupg
 
 ```
 Dockerのリポジトリを追加
 ```
-    sudo install -m 0755 -d /etc/apt/keyrings
-    sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
-    sudo chmod a+r /etc/apt/keyrings/docker.asc
+sudo install -m 0755 -d /etc/apt/keyrings
+sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+sudo chmod a+r /etc/apt/keyrings/docker.asc
 
-    # Add the repository to Apt sources:
-    echo \
-      "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-      $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-      sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-    sudo apt update
+# Add the repository to Apt sources:
+echo \
+    "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+    $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
+    sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+sudo apt update
 
 ```
 Dockerのインストール
 ```
-    sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 ```
 ### 2.Portainerのインストール
@@ -113,4 +113,5 @@ CREATE TABLE users (
 接続先:MariaDBのIPアドレスとポート番号
 例[192.168.1.10:3306]
 ```
+3.ブラウザでWebコンテナのregister.phpにアクセスすればページが表示されます。
 
