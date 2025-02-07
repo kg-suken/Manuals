@@ -180,7 +180,17 @@ The programs included with the Debian GNU/Linux system are free software;
 the exact distribution terms for each program are described in the
 individual files in /usr/share/doc/*/copyright.
 
+
+
 Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
 permitted by applicable law.
 ```
 ※例のようなアスキーアート(?)はfigletで作成できます。
+
+
+## 制作
+**sskrc**
+
+---
+
+今後の改良に関する提案やバグ報告は、お気軽にIssueを通してご連絡ください。
