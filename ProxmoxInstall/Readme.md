@@ -111,14 +111,17 @@ ethtool -k {デバイス名} | grep tcp-segmentation-offload
 無効にする場合は
 `/etc/network/interfaces`を編集し物理I/Fのところにoffload-* offを追記。
 ```
-  offload-gso off
-  offload-gro off
-  offload-tso off
-  offload-rx off
-  offload-tx off
-  offload-rxvlan off
-  offload-txvlan off
-  offload-sg off
+iface eno1 inet manual
+    post-up /sbin/ethtool -K eno1 tso off
+    post-up /sbin/ethtool -K eno1 gso off
+    post-up /sbin/ethtool -K eno1 gro off
+    post-up /sbin/ethtool -K eno1 rx off
+    post-up /sbin/ethtool -K eno1 tx off
+    post-up /sbin/ethtool -K eno1 rxvlan off
+    post-up /sbin/ethtool -K eno1 txvlan off
+    post-up /sbin/ethtool -K eno1 sg off
+
+#eno1　となっているとことは適切に設定してください。
 ```
 再起動して変更を適用し、サイド確認コマンドをじっこうし、offになっているかを確認してください。
 
