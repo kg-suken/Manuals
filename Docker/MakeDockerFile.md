@@ -34,13 +34,13 @@ CMD ["apachectl", "-D", "FOREGROUND"]
 
 のような内容を書き込む
 
-## DockerFileをビルド
+## 3.DockerFileをビルド
 ```
 docker build -t <DockerHubユーザー名>/<イメージ名>:<タグ> .
 # 例:docker build -t myusername/myapp:latest .
 ```
 
-## DockerHubにアップロードする
+## 4.DockerHubにアップロードする
 ログインする
 ```
 docker login
