@@ -36,3 +36,18 @@ sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 docker --version
 ```
 インストールできたことを確認する。
+
+
+## おまけ
+### インストール先を変更する
+`/etc/docker/daemon.json`を
+```
+{
+          "data-root": "/srv/dev-disk-1/Docker"
+}
+```
+のように編集することで可能です。編集したあとは
+```
+sudo systemctl restart docker
+```
+Dockerを再起動してください、
