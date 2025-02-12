@@ -13,5 +13,5 @@ Web管理ツールをインストールします。
 ## [コンテナ内からNvidiaのGPUを利用します](./NvidiaDocker.md)
 NVIDIA-Dockerをセットアップします。
 
-## [DockerFileを買う](./MakeDockerFile.md)
+## [DockerFileを書く](./MakeDockerFile.md)
 DockerFileを記載し、自身のDokcerイメージを作成します
