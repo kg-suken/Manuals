@@ -51,3 +51,17 @@ docker --version
 sudo systemctl restart docker
 ```
 Dockerを再起動してください、
+
+
+### リソースを制限できない
+メモリサブシステムの有効化
+`/etc/default/grub`のGRUB_CMDLINE_LINUX_DEFAULTに`cgroup_enable=memory`を追記
+```
+update-grub
+```    
+grubをアップデート  
+
+```
+reboot now
+```    
+再起動
