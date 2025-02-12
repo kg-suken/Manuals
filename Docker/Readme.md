@@ -9,3 +9,6 @@ DockerエンジンをLinuxPCにインストールします。
 
 ## [Portainerをインストールする方法](./PortainerInstall.md)
 Web管理ツールをインストールします。
+
+## [コンテナ内からNvidiaのGPUを利用します](./NvidiaDocker.md)
+NVIDIA-Dockerをセットアップします。
