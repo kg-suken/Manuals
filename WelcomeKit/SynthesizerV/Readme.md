@@ -1,7 +1,9 @@
 # Synthesizer V
 Dreamtonics株式会社が開発した歌声合成ソフトウェアです。
 無料で使えます(機能制限アリ)  
-ここではSynthesizerVのセットアップと基本的な使い方を学びます
+ここではSynthesizerVのセットアップと基本的な使い方を学びます。  
+最近流行流行りのボカロ曲もこれで作られたりしています。  
+楽しいのでぜひやってみましょう。楽譜が読めなくても音楽が分からなくても大丈夫です!
 
 ## SynthesizerVで作られたもの
 [![](https://img.youtube.com/vi/Soy4jGPHr3g/0.jpg)](https://www.youtube.com/watch?v=Soy4jGPHr3g)  
