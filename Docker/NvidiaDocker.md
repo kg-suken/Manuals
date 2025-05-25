@@ -50,3 +50,22 @@ sudo apt install nvidia-driver-{ここにバージョン}
 ## CUDAコンテナを実行する
 [DockerHUB](https://hub.docker.com/r/nvidia/cuda/tags)に公式のイメージがあるのでこれを利用します。  
 ホストのバージョンに合わせて適切なイメージを選択してください。
+
+## daemon.jsonが消えた場合
+何か問題が起き`/etc/docker/daemon.json`の中身が消えたor設定されない場合
+```
+{
+    "default-runtime": "nvidia",
+    "runtimes": {
+        "nvidia": {
+            "path": "nvidia-container-runtime",
+            "runtimeArgs": []
+        }
+    }
+}
+```
+を記載する必要があります。  
+docker再起動
+```
+systemctl restart docker
+```
